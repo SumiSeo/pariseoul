@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'styles/styles.css'%}">
+    <script src="{% static 'js/script.js'%}" ></script>
+</head>
+<body>
+    <h1>Welcome to Django<h1>
+        <ul>
+            {% comment %} {% for tour in tours %} {% endcomment %}
+            {% comment %} <li>{{tour}}</li> {% endcomment %}
+            {% comment %} {% endfor %} {% endcomment %}
+        </ul>
+        <img src="{% static 'images/logo.png'%}" atl="Django logo"/>
+        <p>I am just for testing to have static assets in django</p>
+</body>
+</html>

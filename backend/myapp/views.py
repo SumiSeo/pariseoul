@@ -7,5 +7,5 @@ def index(request):
     tours= Tour.objects.all()
     context ={'tours':tours}
     return render(
-        request, "tours/index.html",context
+        request, "django_app/index.html",context
     )
